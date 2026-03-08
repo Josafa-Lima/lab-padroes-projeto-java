@@ -4,3 +4,10 @@ Repositório com as implementações dos padrões de projeto explorados no Lab "
 - Singleton
 - Strategy
 - Facade
+
+
+Melhorias implementadas
+
+- Novo comportamento Strategy: ComportamentoFurtivo
+- Testes adicionais no Test.java
+- Organização do código

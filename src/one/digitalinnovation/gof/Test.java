@@ -7,6 +7,7 @@ import one.digitalinnovation.gof.singleton.SingletonLazyHolder;
 import one.digitalinnovation.gof.strategy.Comportamento;
 import one.digitalinnovation.gof.strategy.ComportamentoAgressivo;
 import one.digitalinnovation.gof.strategy.ComportamentoDefensivo;
+import one.digitalinnovation.gof.strategy.ComportamentoFurtivo;
 import one.digitalinnovation.gof.strategy.ComportamentoNormal;
 import one.digitalinnovation.gof.strategy.Robo;
 
@@ -36,6 +37,7 @@ public class Test {
 		Comportamento defensivo = new ComportamentoDefensivo();
 		Comportamento normal = new ComportamentoNormal();
 		Comportamento agressivo = new ComportamentoAgressivo();
+		Comportamento furtivo = new ComportamentoFurtivo();
 		
 		Robo robo = new Robo();
 		robo.setComportamento(normal);
@@ -45,6 +47,7 @@ public class Test {
 		robo.mover();
 		robo.setComportamento(agressivo);
 		robo.mover();
+		robo.setComportamento(furtivo);
 		robo.mover();
 		robo.mover();
 		
